@@ -7,7 +7,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\item\Item;
 
-class Main extends PluginBase impliments Listener
+class Main extends PluginBase implements Listener
 {
 	private $hidden = [];
 	public function onJoin(PlayerJoinEvent $ev) {

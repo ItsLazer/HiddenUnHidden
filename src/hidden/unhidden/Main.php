@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener
 		}else{
 			$key = array_search($ev->getPlayer()->getName());
 			unset($this->hidden[$key]);
-			foreach($ev->getPlayer()->getLevel()) {
+			foreach($ev->getPlayer()->getLevel()->getPlayers() as $player) {
 				$ev->getPlayer()->showPlayer($player);
 			}
 		}
